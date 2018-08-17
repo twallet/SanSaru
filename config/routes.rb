@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { confirmations: 'confirmations' }
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  mount RailsAdmin::Engine => '/admin', as: '/rails_admin'
   get 'static_pages/home'
   get '/terms', to: 'static_pages#terms'
   get '/privacidad', to: 'static_pages#privacidad'
