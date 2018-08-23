@@ -3,7 +3,7 @@
 <%= form_with(url: home_path, model: profile, local: true) do |form| %>
   <% if profile.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+      <h2><%= pluralize(profile.errors.count, "error") %> No se puede guardar este usario por::</h2>
 
       <ul>
       <% profile.errors.full_messages.each do |message| %>
@@ -177,7 +177,7 @@
 
     <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
-        <%= form.label :gender_id, "¿Qué corte de camiseta prefieres?" %>
+        <%= form.label :gender_id, "¿Qué talla de polera/camiseta prefieres?" %>
       </label>
       <div class="col-md-7">
         <%= form.select(:gender_id, Gender.all.collect {|a| [a.name, a.id]},{},{id: :profile_gender_id, class: 'custom-select'}) -%>
@@ -186,7 +186,7 @@
 
     <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
-        <%= form.label :size_id, "¿Qué talla de camiseta prefieres?" %>
+        <%= form.label :size_id, "¿Qué talla de polera/camiseta prefieres?" %>
       </label>
       <div class="col-md-7">
         <%= form.select(:size_id, Size.all.collect {|a| [a.name, a.id]},{},{id: :profile_size_id, class: 'custom-select'}) -%>
