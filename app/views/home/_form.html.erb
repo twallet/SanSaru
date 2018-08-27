@@ -106,20 +106,19 @@
       </div>
     </div>
 
- <!--   <div class="form-group row">
+   <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
-        <%= form.label :agile_id, "Entendiendo que los cuatro valores del manifiesto son importantes, valiosos
-         y ninguno lo es más que el otro, ¿Cual tomarías si tuvieses que elegir sólo uno?" %>
+        <%= form.label :agile_id, "¿Que edad tienes?" %>
       </label>
       <div class="col-md-7">
         <%= form.select(:agile_id, Agile.all.collect {|a| [a.name, a.id]},{},{id: :profile_agile_id, class: 'custom-select'}) -%>
       </div>
-    </div> -->
+    </div> 
 
     <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
         <%= form.label :agile_description, "¿Qué crees que el evento te puede aportar? ¿En qué crees que te va a ayudar?" %><br>
-        <small>Cuéntanos qué más hay en tu cabeza</small>
+        <small>Cuéntanos qué piensas que el evento te puede aportar</small>
       </label>
       <div class="col-md-7">
         <%= form.text_area :agile_description, id: :profile_agile_description, class: 'form-control input-md',style: 'height:100%;' %>
@@ -139,8 +138,8 @@
 
     <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
-        <%= form.label :bring, '¿Algo más que quieras contar? Por ejemplo: ¿Quién eres?, ¿Qué te gusta hacer?, ¿Cuáles son tus intereses?, ¿Cuál es el objetivo que persigues?, Datos de contacto' %><br>
-        <small>Algo mas que quieras contarnos</small>
+        <%= form.label :bring, '¿Algo más que quieras contar? ' %><br>
+        <small>Por ejemplo: ¿Quién eres?, ¿Qué te gusta hacer?, ¿Cuáles son tus intereses?, ¿Cuál es el objetivo que persigues?, Datos de contacto</small>
       </label>
       <div class="col-md-7">
         <%= form.text_area :bring, id: :profile_bring, class: 'form-control input-md',style: 'height:100%;' %>
@@ -176,7 +175,7 @@
 
     <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
-        <%= form.label :gender_id, "¿Qué talla de polera/camiseta prefieres?" %>
+        <%= form.label :gender_id, "¿Qué tipo de polera/camiseta prefieres?" %>
       </label>
       <div class="col-md-7">
         <%= form.select(:gender_id, Gender.all.collect {|a| [a.name, a.id]},{},{id: :profile_gender_id, class: 'custom-select'}) -%>
