@@ -1,5 +1,5 @@
 RailsAdmin.config do |config|
-  config.main_app_name = ['San saru', 'AOP - Chile']
+  config.main_app_name = ['San Saru', 'AOC - Chile']
 
   ### Popular gems integration
 
