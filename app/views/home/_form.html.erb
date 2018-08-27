@@ -106,7 +106,7 @@
       </div>
     </div>
 
-    <div class="form-group row">
+ <!--   <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
         <%= form.label :agile_id, "Entendiendo que los cuatro valores del manifiesto son importantes, valiosos
          y ninguno lo es más que el otro, ¿Cual tomarías si tuvieses que elegir sólo uno?" %>
@@ -114,7 +114,7 @@
       <div class="col-md-7">
         <%= form.select(:agile_id, Agile.all.collect {|a| [a.name, a.id]},{},{id: :profile_agile_id, class: 'custom-select'}) -%>
       </div>
-    </div>
+    </div> -->
 
     <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
@@ -130,7 +130,7 @@
       <label class="col-md-5 control-label" for="textinput">
         <%= form.label :hobbies, "¿Qué puedes aportar tu para que sea un evento asombroso? ¿Cuál sería tu valor agregado?" %><br>
         <small>En general, menciona aquello que te interesa. No necesariamente tiene que
-          estar relacionado al AOC. Queremos saber cuáles son las cosas que te encantan, además de la agilidad.</small>
+          estar relacionado al AOC.</small>
       </label>
       <div class="col-md-7">
         <%= form.text_area :hobbies, id: :profile_hobbies, class: 'form-control input-md',style: 'height:100%;' %>
@@ -140,7 +140,7 @@
     <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
         <%= form.label :bring, '¿Algo más que quieras contar? Por ejemplo: ¿Quién eres?, ¿Qué te gusta hacer?, ¿Cuáles son tus intereses?, ¿Cuál es el objetivo que persigues?, Datos de contacto' %><br>
-        <small>Instrumentos, parlantes, juegos, pelotas... ¡lo que sea!</small>
+        <small>Algo mas que quieras contarnos</small>
       </label>
       <div class="col-md-7">
         <%= form.text_area :bring, id: :profile_bring, class: 'form-control input-md',style: 'height:100%;' %>
@@ -161,7 +161,7 @@
       </div>
     </div>
 
-    <div class="form-group row">
+  <!--  <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
         <%= form.label :bio, 'Cuéntanos más sobre ti:' %><br>
         <small>Cualquier cosa que ayude a que te conozcamos mejor y
@@ -172,7 +172,7 @@
       <div class="col-md-7">
         <%= form.text_area :bio, id: :profile_bio, class: 'form-control input-md',style: 'height:100%;' %>
       </div>
-    </div>
+    </div> -->
 
     <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
@@ -192,7 +192,7 @@
       </div>
     </div>
 
-    <div class="form-group row">
+   <!-- <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
         <%= form.label :phonenumber, 'Dejanos tu numero de telefono' %><br>
         </label>
@@ -209,7 +209,7 @@
       <div class="col-md-7">
         <%= form.text_field :telegram, id: :profile_telegram, class: 'form-control input-md' %>
       </div>
-    </div>
+    </div> -->
 
     <div class="row align-items-center">
       <p class="col-md-12 text-center">¡Gracias por tu interés en AOC Chile 2018 ! </p>
