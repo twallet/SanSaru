@@ -113,7 +113,7 @@
       <div class="col-md-7">
         <%= form.select(:agile_id, Agile.all.collect {|a| [a.name, a.id]},{},{id: :profile_agile_id, class: 'custom-select'}) -%>
       </div>
-    </div> 
+    </div>
 
     <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
@@ -193,6 +193,15 @@
 
     <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
+        <%= form.label :age_id, "¿Cual es tu edad?" %>
+      </label>
+      <div class="col-md-7">
+        <%= form.select(:age_id, Age.all.collect {|a| [a.name, a.id]},{},{id: :profile_age_id, class: 'custom-select'}) -%>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-md-5 control-label" for="textinput">
         <%= form.label :phonenumber, 'Dejanos tu numero de telefono' %><br>
         </label>
         <div class="col-md-7">
@@ -208,7 +217,7 @@
       <div class="col-md-7">
         <%= form.text_field :telegram, id: :profile_telegram, class: 'form-control input-md' %>
       </div>
-    </div> 
+    </div>
 
     <div class="row align-items-center">
       <p class="col-md-12 text-center">¡Gracias por tu interés en AOC Chile 2018 ! </p>

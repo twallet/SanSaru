@@ -10,7 +10,7 @@ User.create(name: 'aoc', lastname: 'admin', email: 'chile@agileopen.camp', passw
 
 Agile.create(name: '18 a 24')
 Agile.create(name: '25 a 34')
-Agile.create(name: '35 a 44 ')
+Agile.create(name: '35 a 44')
 Agile.create(name: '45 a 54')
 # Agile.create(name: '55 a 64')
 # Agile.create(name: 'mayor de 65')
@@ -31,6 +31,13 @@ Size.create(name: 'M')
 Size.create(name: 'L')
 Size.create(name: 'XL')
 Size.create(name: 'XXL')
+
+Age.create(name: '18 a 24')
+Age.create(name: '25 a 34')
+Age.create(name: '35 a 44')
+Age.create(name: '45 a 54')
+Age.create(name: '55 a 64')
+Age.create(name: 'mayor de 65')
 
 Config.create(name: :invitaciones, value: 80)
 Config.create(name: :eleccion, value: 'false')
