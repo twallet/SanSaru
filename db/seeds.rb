@@ -8,12 +8,10 @@
 User.create(name: 'aoc', lastname: 'admin', email: 'chile@agileopen.camp', password: 'passadmin',
             password_confirmation: 'passadmin', admin: true, terms_of_service: 'true')
 
-Agile.create(name: '18 a 24')
-Agile.create(name: '25 a 34')
-Agile.create(name: '35 a 44')
-Agile.create(name: '45 a 54')
-# Agile.create(name: '55 a 64')
-# Agile.create(name: 'mayor de 65')
+Agile.create(name: 'No he estado en un AOC antes')
+Agile.create(name: 'He estado en un AOC')
+Agile.create(name: 'He estado en dos AOCs')
+Agile.create(name: 'He estado en tres o mas AOCs')
 
 AgileRelation.create(name: 'Como hermanos')
 AgileRelation.create(name: 'Mejores amigos')
