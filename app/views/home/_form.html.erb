@@ -95,8 +95,11 @@
        </label>
        <div class="col-md-7">
          <%= form.select(:agile_id, Agile.all.collect {|a| [a.name, a.id]},{},{id: :profile_agile_id, class: 'custom-select'}) -%>
+         <%= form.select :agile_id, [['No he estado en un AOC antes', true], ['He estado en un AOC', false],['He estado en dos AOCs', false], ['He estado en tres o mas AOCs', false]],{},{id: :profile_first_time, class: 'custom-select'}  %>
        </div>
      </div>
+
+
 
     <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
