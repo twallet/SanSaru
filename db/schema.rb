@@ -95,7 +95,6 @@ ActiveRecord::Schema.define(version: 2018_07_24_232923) do
     t.bigint "agileRelation_id"
     t.bigint "gender_id"
     t.bigint "size_id"
-    t.bigint "age_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "country", default: "", null: false
@@ -107,16 +106,9 @@ ActiveRecord::Schema.define(version: 2018_07_24_232923) do
     t.index ["agile_id"], name: "index_profiles_on_agile_id"
     t.index ["gender_id"], name: "index_profiles_on_gender_id"
     t.index ["size_id"], name: "index_profiles_on_size_id"
-    t.index ["age_id"], name: "index_profiles_on_age_id"
   end
 
   create_table "sizes", force: :cascade do |t|
-    t.string "name", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "ages", force: :cascade do |t|
     t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -34,6 +34,6 @@ class ProfilesController < ApplicationController
                                                 :agile_id, :agile_description,
                                                 :hobbies, :bring, :proposal,
                                                 :bio, :agileRelation_id,
-                                                :gender_id, :size_id, :age_id)
+                                                :gender_id, :size_id)
   end
 end
