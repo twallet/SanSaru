@@ -96,7 +96,7 @@
        <div class="col-md-7">
          <!-- <%= form.select(:agile_id, Agile.all.collect {|a| [a.name, a.id]},{},{id: :profile_agile_id, class: 'custom-select'}) -%> -->
          <%= form.select(:agileRelation_id, AgileRelation.all.collect {|a| [a.name, a.id]},{},{id: :profile_agileRelation_id, class: 'custom-select'},
-                 if (a.name == No he estado en AOC antes){id:true :profile_first_time, class: 'custom-select'}else id:false :profile_first_time, class: 'custom-select' ) -%>
+                 if (a.name == 'No he estado en AOC antes'){id:true :profile_first_time, class: 'custom-select'}else id:false :profile_first_time, class: 'custom-select' ) -%>
        </div>
      </div>
 
