@@ -20,7 +20,7 @@
           <% if @profile.first_time %>
             Si
             <% else %>
-            <%= Agile.find(@profile.agile_id).name %>
+            No
             <% end %>
         </h4>
       </div>
@@ -167,6 +167,14 @@
         <p>
           <%= AgileRelation.find(@profile.agileRelation_id).name %>
         </p>
+        <% if @profile.first_time %>
+        <p>
+          <strong>:</strong>
+          <%= Agile.find(@profile.agile_id).name %>
+        </p>
+          <% else %>
+
+          <% end %>
 
         <p>
           <strong>Elegido por:</strong>
