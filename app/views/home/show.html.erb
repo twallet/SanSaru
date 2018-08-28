@@ -26,7 +26,10 @@
               </p>
             <% end %>
         </h3>
-      </div>
+        <div class="row justify-content-md-center">
+          <h4  <%= @profile.agile_description %> </h4>
+        </div>
+
       <% unless params[:postulado] %>
         <div class="row justify-content-md-center">
           <h6>Camiseta de <%= Gender.find(@profile.gender_id).name %></h6>
