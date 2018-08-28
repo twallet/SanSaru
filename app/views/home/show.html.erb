@@ -16,7 +16,8 @@
         </h6>
       </div>
       <div class="row justify-content-md-center">
-        <h4>Primera vez en un AOC:
+        <h4>Primera vez en un AOC:</h4>
+        <h3>
           <% if @profile.first_time %>
             Si
             <% else %>
@@ -24,7 +25,7 @@
                 <%= Agile.find(@profile.agile_id).name %>
               </p>
             <% end %>
-        </h4>
+        </h3>
       </div>
       <% unless params[:postulado] %>
         <div class="row justify-content-md-center">
