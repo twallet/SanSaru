@@ -22,7 +22,7 @@ class ProfilesControllerTest < ActionDispatch::IntegrationTest
                                               bio: @profile.bio, bring: @profile.bring, expectancy: @profile.expectancy,
                                               first_time: @profile.first_time, gender_id: @profile.gender_id,
                                               hobbies: @profile.hobbies, proposal: @profile.proposal,
-                                              residence: @profile.residence, size_id: @profile.size_id } }
+                                              residence: @profile.residence, size_id: @profile.size_id, age_id: @profile.age_id } }
     end
 
     assert_redirected_to profile_url(Profile.last)
@@ -45,7 +45,7 @@ class ProfilesControllerTest < ActionDispatch::IntegrationTest
                                                       bring: @profile.bring, expectancy: @profile.expectancy,
                                                       first_time: @profile.first_time, gender_id: @profile.gender_id,
                                                       hobbies: @profile.hobbies, proposal: @profile.proposal,
-                                                      residence: @profile.residence, size_id: @profile.size_id } }
+                                                      residence: @profile.residence, size_id: @profile.size_id,  age_id: @profile.age_id } }
     assert_redirected_to profile_url(@profile)
   end
 

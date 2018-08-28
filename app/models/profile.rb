@@ -1,6 +1,7 @@
 class Profile < ApplicationRecord
   has_paper_trail
   belongs_to :size
+  belongs_to :age
   belongs_to :gender
   belongs_to :agile
   belongs_to :agileRelation

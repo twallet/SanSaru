@@ -13,6 +13,7 @@ class CreateProfiles < ActiveRecord::Migration[5.1]
       t.belongs_to :agileRelation, index: true
       t.belongs_to :gender, index: true
       t.belongs_to :size, index: true
+      t.belongs_to :age, index: true
       t.timestamps
     end
   end

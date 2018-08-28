@@ -96,6 +96,6 @@ end
   def profile_params
     params.require(:profile).permit(:phonenumber, :telegram, :country, :city, :state, :first_time,
                                     :expectancy, :agile_id, :agile_description, :hobbies, :bring, :proposal,
-                                    :bio, :agileRelation_id, :gender_id, :size_id)
+                                    :bio, :agileRelation_id, :gender_id, :size_id, :age_id)
   end
 end

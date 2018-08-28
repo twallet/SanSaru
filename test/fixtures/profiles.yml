@@ -13,6 +13,7 @@ one:
   agileRelation_id: 1
   gender_id: 1
   size_id: 1
+  size_id: MyString
 
 two:
   residence: MyString
@@ -27,3 +28,4 @@ two:
   agileRelation_id: 1
   gender_id: 1
   size_id: 1
+  size_id: MyString
