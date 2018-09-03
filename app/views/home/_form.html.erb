@@ -117,8 +117,8 @@
 
     <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
-        <%= form.label :agile_description, "¿A qué te dedicas? Organización, rol, función" %><br>
-        <small>Cuéntanos qué piensas que el evento te puede aportar</small>
+        <%= form.label :agile_description, "¿A qué te dedicas? " %><br>
+        <small>Organización, rol, función</small>
       </label>
       <div class="col-md-7">
         <%= form.text_area :agile_description, id: :profile_agile_description, class: 'form-control input-md',style: 'height:100%;' %>
@@ -127,9 +127,8 @@
 
     <div class="form-group row">
       <label class="col-md-5 control-label" for="textinput">
-        <%= form.label :hobbies, "¿Qué puedes aportar tu para que sea un evento asombroso? ¿Cuál sería tu valor agregado?" %><br>
-        <small>En general, menciona aquello que te interesa. No necesariamente tiene que
-          estar relacionado al AOC.</small>
+        <%= form.label :hobbies, "¿Qué puedes aportar tu para que sea un evento asombroso?" %><br>
+        <small>¿Cuál sería tu valor agregado?.</small>
       </label>
       <div class="col-md-7">
         <%= form.text_area :hobbies, id: :profile_hobbies, class: 'form-control input-md',style: 'height:100%;' %>
