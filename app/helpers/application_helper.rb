@@ -2,50 +2,50 @@ module ApplicationHelper
 
   # Repetir esto en config/initializers/rails_admin.rb, en la llamada a config.main_app_name (porque es previo a esto)
   def aoc_name
-    "AOC Bariloche 2019"
+    "AOC España 2019"
   end
 
   def aoc_fullname
-    "Agile Open Camp Bariloche 2019"
+    "Agile Open Camp España 2019"
   end
 
   def aoc_site
-    "http://argentina.agileopen.camp/"
+    "http://spain.agileopen.camp/"
   end
 
   def aoc_mail
-    "argentina@agileopen.camp"
+    "espana@agileopen.camp"
   end
 
   def aoc_reserve
-    "USD 50"
+    "200€"
   end
 
   def aoc_price
-    "USD 360"
+    "200€"
   end
 
   def aoc_price_ideal
-    "USD 150"
+    "200€"
   end
 
   def aoc_limit
-    75
+    80
   end
 
   def aoc_dates
-    "10 al 13 de abril de 2019"
+    "26 al 29 de septiembre de 2019"
   end
 
   def aoc_venue
-    "Hotel Tronador"
+    "Vector Academy"
   end
 
   def aoc_venue_location
-    "dentro del Parque Nacional Nahuel Huapi, en Bariloche"
+    "camino de Venero Claro, Navaluenga (Ávila)"
   end
 
   def aoc_monkeys
-    "Tommy Christie, María Thompson y Martín Salías"
+    "Ingrid Astiz, David Roncero y Thomas Wallet"
   end
 end
